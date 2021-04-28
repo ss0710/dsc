@@ -5,6 +5,12 @@ import DSC from '../../assets/Dsc.png';
 import {Link} from 'react-router-dom';
 
 function Nav() {
+  
+  
+
+  const LastLink ={
+    marginRight: '2rem'
+  }
 
   const style={
     overflow: 'hidden'
@@ -21,12 +27,12 @@ function Nav() {
     </ReactBootStrap.Nav>
     <div className="in-center">
     <ReactBootStrap.Nav>
-    <p className="textHover"><Link to="/" style={{ textDecoration: 'none' }}>Home</Link></p>
-    <p className="textHover"><Link to="/Achievements" style={{ textDecoration: 'none' }}>Achievements</Link></p>
-    <p className="textHover"><Link to="/Event" style={{ textDecoration: 'none' }}>Events</Link></p>
-    
+    <ReactBootStrap.Nav.Link href="#deets" ><p className="textHover"><Link to="/" style={{ textDecoration: 'none' }}>Home</Link></p></ReactBootStrap.Nav.Link>
+    <ReactBootStrap.Nav.Link href="#deets" ><p className="textHover"><Link to="/Achievements" style={{ textDecoration: 'none' }}>Achievements</Link></p></ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="#deets" ><p className="textHover"><Link to="/Event" style={{ textDecoration: 'none' }}>Events</Link></p></ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link eventKey={2} href="#memes" style={LastLink}>
       <p className="textHover"><Link to="/Team" style={{ textDecoration: 'none' }}>Team</Link></p>
-      
+      </ReactBootStrap.Nav.Link>
     </ReactBootStrap.Nav>
     </div>
   </ReactBootStrap.Navbar.Collapse>

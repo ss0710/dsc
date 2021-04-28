@@ -41,7 +41,7 @@ const Imformation = () => {
                 <ReactBootStrap.Container>
                 <ReactBootStrap.Row className="imfo-row">
                     <ReactBootStrap.Col lg={6} sm={12}  className="imfo-image">
-                        <img src={Networking} alt="imfo" height="250px" width="400px"/>
+                        <img src={Networking} alt="imfo" height="250px" width="300px"/>
                     </ReactBootStrap.Col>
                     <ReactBootStrap.Col lg={6} sm={12} className="imfo-content">
                     <h4>NETWORKING</h4>

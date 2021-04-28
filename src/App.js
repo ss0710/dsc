@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Imfo from './components/Navbar/Imfo';
+import Nav from './components/Navbar/Nav';
+import Home from './components/RoutingComponents/HomePage/home/Home';
+import Foot from './components/Footer/Footer';
+import Team from '../src/components/RoutingComponents/Team/Team';
+import {Route , Switch} from 'react-router-dom';
+import Event from './components/RoutingComponents/events/Event';
+import Achievements from './components/RoutingComponents/achievements/Achievements';
+import Contact from './components/RoutingComponents/Contact/Contact';
+import ScrollToTop from './ScrollToTop';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <React.Fragment>
+          <Imfo/>
+          <Nav/>
+          <ScrollToTop />
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/Team" component={Team}/>
+            <Route path="/Event" component={Event}/>
+            <Route path="/Achievements" component={Achievements}/>
+            <Route path="/Contact" component={Contact}/>
+          </Switch>
+          <Foot/>
+        </React.Fragment>
   );
 }
 

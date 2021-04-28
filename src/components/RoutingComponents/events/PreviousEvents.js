@@ -22,17 +22,19 @@ class PreviousEvents extends React.Component{
                 </div>
                 <ReactBootStrap.Container>
                     <ReactBootStrap.Row>
-                        <ReactBootStrap.Col>
+                        
+
+                        <ReactBootStrap.Col lg={4} md={12} sm={12}>
                         <div className="U-div">
                         <YouTube videoId="RpG8_ZPeQcc" opts={opts} onReady={this._onReady} />
                         </div>
                         </ReactBootStrap.Col>
-                        <ReactBootStrap.Col>
+                        <ReactBootStrap.Col lg={4} md={12} sm={12}>
                         <div className="U-div">
                         <YouTube videoId="91G4EEXJGYA" opts={opts} onReady={this._onReady} />
                         </div>
                         </ReactBootStrap.Col>
-                        <ReactBootStrap.Col>
+                        <ReactBootStrap.Col lg={4} md={12} sm={12}>
                         <div className="U-div">
                         <YouTube videoId="TDt9O-dIGYE" opts={opts} onReady={this._onReady} />
                         </div>
